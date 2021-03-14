@@ -1,0 +1,566 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+@-ms-viewport{
+    width: device-width;
+}
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1;
+}
+body
+{
+    background-color:  #DCE1E3;
+}
+
+
+/*------------------- Navbar Css --------------------------*/
+.importantRule { background-color: #DCE1E3; }
+.nav-link:hover
+{
+    background-color:#104f55;
+    padding: .5rem 1.6rem;
+    border-radius: 10%;
+    color: #fff !important;
+}
+.mascolor
+{
+    color: #3f4954 !important ;
+    font-size: 1.6rem;
+}
+.icon1
+{
+    background-color:#116466; 
+    padding: 10px;
+    border-radius: 20%;
+    cursor: pointer; 
+    transition: all .5s;
+}
+.icon1:hover
+{
+    color:#EDF5E1; 
+}
+/*------------------- Navbar Css --------------------------*/
+
+/*------------------- Home Css --------------------------*/
+.home
+{
+    background-image: url(../images/Background-image.png);
+    height: 100vh;
+    background-size: 100% 100%;
+}
+.btcolor
+{
+ background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+ transition: all .5s;
+ cursor: pointer;
+}
+.btcolor:hover
+{
+    background-image: none;
+    color: #fff; 
+}
+
+/*------------------- Home Css --------------------------*/
+/*------------------- blog Css --------------------------*/
+.blog-car
+{
+    background-image: url(../images/Abract01.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    background-size: 65%;
+}
+.cont1
+{
+    width: 90%;
+    padding-top: 12rem;
+}
+.btcolor1
+{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+.owl-nav{
+    position: absolute;
+    top: -30%;
+    margin: 0 auto;
+    width: 100%;
+}
+.prev,.next
+{
+    transition: all .5s;
+}
+.prev{
+    padding-right: 15px;
+}
+.prev:hover,.next:hover
+{
+    color: #116466;
+    font-size: 1.2rem;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background: transparent;
+    color: #116466;
+}
+.owl-theme .owl-nav [class*='owl-']{
+    outline: none;
+}
+.card-img-top {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+/*------------------- blog Css --------------------------*/
+
+/*------------------- Category --------------------------*/
+.category
+{
+    width: 90%;
+    margin: auto;
+}
+.commit
+{
+    width: 50%;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    margin: 10px auto;
+}
+.img1{
+    transition: all 1s;
+    cursor: pointer;
+}
+.img1:hover{
+    transform: scale(1.2);
+}
+
+.popular
+{
+    background-color: white;
+    position: absolute;
+    bottom:24%;   
+}
+.space
+{
+    margin-top: 350px;
+}
+.commit1
+{
+    width: 75%;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+.tag
+{
+    margin: .4rem .6rem;
+}
+.tags
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.pagiMove
+{
+    margin-left: 330px;
+}
+.pagiColor
+{
+    color: #DCE1E3;
+    background-color: black;
+    border-color: black;
+    margin: 0 4px;
+    transition: all .5s;
+}
+.pagiColor:hover
+{
+    color: black;
+    background-color: white;
+    border-color: white;
+}
+/*------------------- Category --------------------------*/
+/*------------------- footer --------------------------*/
+footer
+{
+    background-color: black;
+}
+.cont
+{
+    width: 90%;
+    margin: auto;
+    padding-left: 100px;
+}
+.emailIcon
+{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    padding: 12px 14px;
+    position: relative;
+    left: -12%;
+    top:1.7px;
+    cursor: pointer;
+    border-radius: 10%;
+}
+.emailInput
+{
+    background-color: black;
+    outline: white;
+    color: white;
+    width: 75%;
+}
+/*------------------- footer --------------------------*/
+
+/*-----------------------------Our Works------------------------- */
+.aBehave{
+    text-decoration: none;
+    color: black;
+}
+.workss .aBehave:hover
+{
+    color: black;
+    text-decoration: none;
+}
+.workss .nav-item .active
+{
+    background-color: #116466;
+    color: white !important;
+    padding: 12px;
+}
+.imgHov
+{
+    width: 100%;
+    transition: all .7s;
+}
+.member:hover .imgHov
+{
+    transform: scale(1.2);
+}
+.member
+{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.caption
+{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #116466;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.member:hover .caption
+{
+    opacity: .9;
+}
+.caption h6
+{
+    position: relative;
+    top: 100%;
+    left: 0;
+    color: #C0C0C0;
+    transition: all .5s;
+}
+.member:hover .caption h6
+{
+    top:40%;
+}
+.caption p
+{
+    font-size: 20px;
+    position: relative;
+    top: 100%;
+    left: 0;
+    transition: all .5s;
+}
+.member:hover .caption p
+{
+    top:40%;
+}
+
+/*-----------------------------Our Works------------------------- */
+
+/*------------------- back to top buttton-------------- */
+#toTop
+{
+  position: fixed;
+  bottom: 50px;
+  right: 25px;
+  z-index: 999999999;
+  display: none;
+  cursor: pointer;
+  color: white;
+  background-color:#104f55;
+  border-radius: 40%;
+}
+/* back to top buttton */
+
+
+/* loading screen */
+#loading{
+    width: 100%;
+    height: 100vh;
+    background-color: #DCE1E3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999999999;
+}
+.spinner {
+    width: 70px;
+    height: 70px;
+    background-color: #104f55;
+  
+    margin: 300px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+  
+@-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+  
+@keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+/*------------------- loading screen------------------------------- */
+
+/*              Viewport less then 767px for home & carousal         */
+@media screen and (max-width: 340px){
+    .cont1
+    {
+        width: 340px;
+    }
+    .card
+    {
+        margin: auto;
+        width: 10rem !important;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .home
+    {
+        background-size: cover;
+    }
+    .iconspace
+    {
+        margin-top: 10px;
+    }
+    .card
+    {
+        margin: auto;
+        width: 20rem !important;
+    }
+} 
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .card
+    {
+        margin: auto;
+        width: 20rem !important;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+    .iconspace
+    {
+        margin-top: 10px;
+    }
+    .card
+    {
+        margin: auto;
+    }
+}
+
+/*              Viewport less then 767px for home & carousal         */
+
+/*              Viewport less then 767px for Category         */
+@media screen and (max-width: 360px){
+    .category{
+        width: 340px;
+    }
+    .commit
+    {
+        width: 100%;
+    }
+    .pagiMove
+    {
+        margin-left: 80px;
+    }
+}
+@media screen and (min-width: 361px) and (max-width: 507px){
+    .commit
+    {
+        width: 100%;
+    }
+    .pagiMove
+    {
+        margin-left: 80px;
+    }
+}
+@media screen and (min-width: 507px) and (max-width: 768px){
+    .commit
+    {
+        width: 75%;
+    }
+    .pagiMove
+    {
+        margin-left: 120px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .commit
+    {
+        width: 75%;
+    }
+    .pagiMove
+    {
+        margin-left: 140px;
+    }
+
+}
+@media screen and (min-width: 993px) and (max-width: 1138px) {
+    .commit
+    {
+        width: 60%;
+    }
+    .pagiMove
+    {
+        margin-left: 200px;
+    }
+}
+
+/*              Viewport less then 767px for Category         */
+
+
+/*              Viewport less then 767px for Category side        */
+
+@media screen and (max-width: 360px){
+    .commit1{
+        width: 100%;   
+    }
+    .post
+    {
+        width: 360px;
+    }
+}
+@media screen and (min-width: 361px) and (max-width: 767px){
+    .commit1{
+        width: 70%;   
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 877px){
+    .span{
+        display: block;
+    }
+    .commit1{
+        width: 90%;   
+    }
+}
+
+@media screen and (min-width: 878px) and (max-width: 992px) {
+    .commit1{
+        width: 100%;   
+    }
+}
+@media screen and (min-width: 993px) and (max-width: 1120px) {
+    .commit1{
+        width: 90%;
+    }
+}
+
+/*              Viewport less then 767px for Category side        */
+
+
+
+/*              Viewport less then 767px for Footer         */
+
+@media screen and (max-width: 361px){
+    footer
+    {
+        width: 360px;
+    }
+    .footer
+    {
+        margin-right: 90px;
+    }
+    .emailInput
+    {
+        width: 59%;
+    }
+    .iconLink
+    {
+        margin-top: 15px;        
+    }
+}
+@media screen and (min-width: 362px) and (max-width: 499px) {
+    .footer
+    {
+        margin-right: 60px;
+    }
+    .emailInput
+    {
+        width: 60%;
+    }
+    .iconLink
+    {
+        margin-top: 10px;        
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 619px) {
+    .footer
+    {
+        text-align: center;
+        margin-right: 60px;
+    }
+    .emailInput
+    {
+        width: 60%;
+    }
+    .iconLink
+    {
+        margin-top: 10px;        
+    }
+}
+@media screen and (min-width: 620px) and (max-width: 992px) {
+    .footer
+    {
+        text-align: center;
+        margin-right: 60px;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .footer
+    {
+        text-align: center;
+        margin-right: 60px;
+    }
+    .emailIcon
+    {
+        left: -10%;
+    }
+}
+
+/*              Viewport less then 767px for Footer         */
