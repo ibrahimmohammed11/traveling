@@ -16,8 +16,9 @@ body
 {
     background-color:  #DCE1E3;
 }
-
-
+html,body{
+    overflow-x: hidden;
+}
 /*------------------- Navbar Css --------------------------*/
 .importantRule { background-color: #DCE1E3; }
 .nav-link:hover
@@ -405,7 +406,7 @@ footer
     }
     .pagiMove
     {
-        margin-left: 80px;
+        margin-left: 20px;
     }
 }
 @media screen and (min-width: 361px) and (max-width: 507px){
@@ -415,7 +416,7 @@ footer
     }
     .pagiMove
     {
-        margin-left: 80px;
+        margin-left: 50px;
     }
 }
 @media screen and (min-width: 507px) and (max-width: 768px){
