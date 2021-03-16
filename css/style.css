@@ -188,12 +188,7 @@ footer
 {
     background-color: black;
 }
-.cont
-{
-    width: 90%;
-    margin: auto;
-    padding-left: 100px;
-}
+
 .emailIcon
 {
     background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
@@ -303,48 +298,6 @@ footer
   border-radius: 40%;
 }
 /* back to top buttton */
-
-
-/* loading screen */
-#loading{
-    width: 100%;
-    height: 100vh;
-    background-color: #DCE1E3;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999999999999;
-}
-.spinner {
-    width: 70px;
-    height: 70px;
-    background-color: #104f55;
-  
-    margin: 300px auto;
-    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
-    animation: sk-rotateplane 1.2s infinite ease-in-out;
-}
-  
-@-webkit-keyframes sk-rotateplane {
-    0% { -webkit-transform: perspective(120px) }
-    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
-    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
-}
-  
-@keyframes sk-rotateplane {
-    0% { 
-      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
-    } 50% { 
-      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
-    } 100% { 
-      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-    }
-}
-/*------------------- loading screen------------------------------- */
-
 /*              Viewport less then 767px for home & carousal         */
 @media screen and (max-width: 340px){
     .cont1
@@ -565,3 +518,78 @@ footer
 }
 
 /*              Viewport less then 767px for Footer         */
+/*------------------loading----------------------------*/
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999999999999999;
+  }
+
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  25% {
+    transform: rotate(180deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  75% {
+    transform: rotate(360deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  
+  25% {
+    height: 0%;
+  }
+  
+  50% {
+    height: 100%;
+  }
+  
+  75% {
+    height: 100%;
+  }
+  
+  100% {
+    height: 0%;
+  }
+}

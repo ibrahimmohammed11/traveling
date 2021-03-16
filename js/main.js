@@ -68,11 +68,9 @@ $(window).scroll(function(){
 })
 /* navbar change color  */
 /* loading screen  */
-$(document).ready(function(){
-  $("#loading").fadeOut(2500,function(){
-    $("body").css("overflow","visible")
-  })
-})
+$(window).on("load",function(){
+  $(".loader-wrapper").fadeOut("slow");
+});
 /* loading screen  */
 /* AOS animation  */
 AOS.init();
