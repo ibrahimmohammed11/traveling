@@ -68,7 +68,7 @@ $(window).scroll(function(){
 })
 /* navbar change color  */
 /* loading screen  */
-$(window).on("load",function(){
+$(document).ready(function(){
   $(".loader-wrapper").fadeOut("slow");
 });
 /* loading screen  */
